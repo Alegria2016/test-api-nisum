@@ -25,6 +25,11 @@ Respuesta:
 ![image](https://github.com/user-attachments/assets/0fcc52e2-1fcf-424c-9cc4-0019e39ef080)
 
 
+Si el si se intenta crear un nuevo usuario con el mismo correo se realiza validación de acuerdo con la solicitud, la cual indica que existe un usuario con el mismo correo ver respuesta.
+
+![image](https://github.com/user-attachments/assets/83ac361f-391a-4a78-beb1-03dc7d2c3517)
+
+
 
 
 

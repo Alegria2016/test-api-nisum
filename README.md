@@ -63,7 +63,8 @@ http://localhost:8080/api/v1/users/c10b9c77-6490-44af-9d75-c0baf9cbc9ec
 
 Body:
 
-![image](https://github.com/user-attachments/assets/1b02561a-2db4-4c32-b878-7936a3a2739d)
+![image](https://github.com/user-attachments/assets/c1b069b6-2dd7-477b-9c0e-0853c6d76abd)
+
 
 Respuesta:
 {

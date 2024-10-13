@@ -10,7 +10,7 @@ Para la tabla Usuarios se define id en formato UUID de acuerdo con solicitud.
 
 ![image](https://github.com/user-attachments/assets/539adc24-2757-401b-bc15-9025f8afa3fc)
 
-Para levantar el proyecto.
+Para Iniciar el proyecto.
 1) Clone repositorio.
 2) De preferencia usar Intellij IDEA
 3) Limpiar proyecto e Iniciar.

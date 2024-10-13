@@ -4,7 +4,7 @@ Se desarrolló la Api bajo arquitectura SOA Orientada a Servicios, mediante tres
 
 ![image](https://github.com/user-attachments/assets/c77ce4d2-0c70-441b-a8d4-5ce333fce30c)
 
-Base de datos H2
+Base de datos H2,
 Modelo Entidad Relación (MER)
 Para la tabla Usuarios se define id en formato UUID de acuerdo con solicitud.
 

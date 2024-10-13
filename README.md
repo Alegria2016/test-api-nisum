@@ -8,3 +8,6 @@ Base de datos H2
 Modelo Entidad Relación (MER)
 Para la tabla Usuarios se define id en formato UUID de acuerdo con solicitud.
 
+![image](https://github.com/user-attachments/assets/539adc24-2757-401b-bc15-9025f8afa3fc)
+
+

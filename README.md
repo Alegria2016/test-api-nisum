@@ -79,6 +79,25 @@ Respuesta:
 }
 
 
+Para los dos últimos Endpoint Actualizar y Eliminar hago uso de Spring Security para restringir las dos rutas para que solo quienes se autentiquen mediante el envío del token puedas tener acceso a la actualización y eliminación. 
+Como se muestra a continuación 
+
+
+![image](https://github.com/user-attachments/assets/f6b57ede-0b34-4715-8783-7e5e756322a5)
+
+Si el token ha expirado se puede autenticar nuevamente mediante el Endpoint de login
+http://localhost:8080/api/v1/auth/login
+
+Body
+
+{
+    "email":"juan@gmail.com",
+    "password":"Test123="
+}
+
+
+
+
 
 
 

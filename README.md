@@ -33,6 +33,64 @@ Endpoint Consultar Usuarios:
 Retorna todos los usuarios creados con paginación.
 http://localhost:8080/api/v1/users
 
+{
+    "content": [
+        {
+            "id": "d31e4973-2804-4d78-b5dc-c086d12eb8e8",
+            "name": "Juan",
+            "email": "juan@gmail.com",
+            "password": "$2a$10$oiGCWtn.EoKpbh6.gZvs.uberTOawsnfocX83UlERTHH0xY2543lW",
+            "phones": [
+                {
+                    "id": 1,
+                    "number": "312442334",
+                    "cityCode": null,
+                    "countryCode": null
+                }
+            ]
+        },
+        {
+            "id": "ddabf504-7c4c-4a12-b2d7-0ac200d776ae",
+            "name": "Juan",
+            "email": "juan2@gmail.com",
+            "password": "$2a$10$tU85mjm86xTgX9MDbH2tUeLvlXiLL.l9fuKcCF2dhhTTgC6Y1VHii",
+            "phones": [
+                {
+                    "id": 2,
+                    "number": "312442334",
+                    "cityCode": null,
+                    "countryCode": null
+                }
+            ]
+        }
+    ],
+    "pageable": {
+        "pageNumber": 0,
+        "pageSize": 10,
+        "sort": {
+            "empty": true,
+            "sorted": false,
+            "unsorted": true
+        },
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+    },
+    "last": true,
+    "totalElements": 2,
+    "totalPages": 1,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+    },
+    "first": true,
+    "numberOfElements": 2,
+    "empty": false
+}
+
 
 
 

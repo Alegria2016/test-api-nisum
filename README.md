@@ -44,6 +44,31 @@ Respuesta del servicio:
 
 ![image](https://github.com/user-attachments/assets/0f285bfa-c2aa-41c2-b47b-1e8815fb1966)
 
+Endpoint Actualizar Usuario.
+http://localhost:8080/api/v1/users/c10b9c77-6490-44af-9d75-c0baf9cbc9ec
+
+Body:
+
+![image](https://github.com/user-attachments/assets/1b02561a-2db4-4c32-b878-7936a3a2739d)
+
+Respuesta:
+{
+    "id": "c10b9c77-6490-44af-9d75-c0baf9cbc9ec",
+    "name": "Juan",
+    "email": "juan5@gmail.com",
+    "password": "$2a$10$E2OLjQXFDk/2mVY5dqZJluvsZ6FE8.dofhWw61ofymY87pgzCSfOC",
+    "phones": [
+        {
+            "id": 4,
+            "number": "66666",
+            "cityCode": "666",
+            "countryCode": "7"
+        }
+    ]
+}
+
+
+
 
 
 

@@ -1,6 +1,16 @@
 # API REST CREACIÓN DE USUARIO.
 
-Se desarrolló la Api bajo arquitectura SOA Orientada a Servicios, mediante tres capas Cliente Rest, Servicio, Datos. La api cuenta con Spring Security e implantación de JWT, también se hace uso de varios patrones de diseños como Builder entre otros. También de hace uso de códigos de respuestas Http adecuados a cada solicitud, para ello se creó la clase ErrorCatalog en la cual se definen los mensajes para cada tipo de error de la Api.
+Se desarrolló la Api bajo arquitectura SOA Orientada a Servicios, mediante tres capas Cliente Rest, Servicio, Datos. La api cuenta con Spring Security e implantación de JWT, también se hace uso de varios patrones de diseños como Builder entre otros. Se hace uso de códigos de respuestas Http adecuados a cada solicitud, para ello se creó la clase ErrorCatalog en la cual se definen los mensajes para cada tipo de error de la Api.
+
+Para levantar el proyecto.
+1) Clone repositorio.
+2) De preferencia usar Intellij IDEA
+3) Limpiar proyecto e Iniciar.
+
+Una vez inicia el proyecto ir na navegador para ver la documentacion. 
+http://localhost:8080/swagger-ui/index.html
+Especificar el puerto en el cual haya iniciado el proyecto en me caso es http://localhost:8080 seguido de la ruta de la documentacion como aparece anteriormente.
+
 
 ![image](https://github.com/user-attachments/assets/c77ce4d2-0c70-441b-a8d4-5ce333fce30c)
 

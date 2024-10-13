@@ -36,6 +36,16 @@ http://localhost:8080/api/v1/users
 ![image](https://github.com/user-attachments/assets/c5a8c543-748b-4f32-b55f-aacc5e1c7d61)
 
 
+Endpoint Consultar por usuario por ID 
+El ID está en formato UUID.
+http://localhost:8080/api/v1/users/111f1bcd-2efd-45ec-826e-cfcd3beaebf2
+Respuesta del servicio:
+
+
+![image](https://github.com/user-attachments/assets/0f285bfa-c2aa-41c2-b47b-1e8815fb1966)
+
+
+
 
 
 

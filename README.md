@@ -68,6 +68,18 @@ Respuesta:
 }
 
 
+Endpoint Eliminar Usuario:
+http://localhost:8080/api/v1/users/c10b9c77-6490-44af-9d75-c0baf9cbc9ec
+
+Respuesta: 
+{
+    "valid": true,
+    "statusCode": 202,
+    "message": "El usuario eliminado correctamente."
+}
+
+
+
 
 
 

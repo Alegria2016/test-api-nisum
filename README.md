@@ -27,7 +27,8 @@ El correo debe cumplir este formato: juan@gmail.com al igual que la contraseña 
 Las dos expresiones se encuentran en la en el paquete utils en la clase Constant se hace uso de ellas mediante un servicio que permite hacer las validaciones correspondientes desde cualquier otra clase mediante el uso de Composición, sólo inyectando el servicio.
 http://localhost:8080/api/v1/auth/register
 
-![image](https://github.com/user-attachments/assets/0b59f561-878d-4c3c-b76b-b04e2f0e1273)
+![image](https://github.com/user-attachments/assets/e4a099ee-e9cd-4239-be10-540438b373ac)
+
 
 
 Respuesta:

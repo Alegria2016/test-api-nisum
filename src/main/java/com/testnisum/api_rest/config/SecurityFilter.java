@@ -22,6 +22,12 @@ public class SecurityFilter {
     @Autowired
     private JwtAuthenticationFilter jwtAuthenticationFilter;
 
+    private static final String[] AUTH_WHITELIST = {
+            "/v3/api-docs/**",
+            "/swagger-ui/**",
+            "/swagger-ui.html",
+    };
+
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -36,6 +42,9 @@ public class SecurityFilter {
                     authConfig.requestMatchers(HttpMethod.POST, "/api/v1/auth/login").permitAll();
                     authConfig.requestMatchers(HttpMethod.POST, "/api/v1/auth/register").permitAll();
                     authConfig.requestMatchers(HttpMethod.GET, "/h2-test-api/**").permitAll();
+
+                    authConfig.requestMatchers(AUTH_WHITELIST).permitAll();
+
 
                     authConfig.requestMatchers(HttpMethod.GET, "/api/v1/users").permitAll();
                     authConfig.requestMatchers(HttpMethod.GET, "/api/v1/users/{id}").permitAll();

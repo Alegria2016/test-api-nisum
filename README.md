@@ -45,7 +45,8 @@ Endpoint Consultar Usuarios:
 Retorna todos los usuarios creados con paginación.
 http://localhost:8080/api/v1/users
 
-![image](https://github.com/user-attachments/assets/c5a8c543-748b-4f32-b55f-aacc5e1c7d61)
+![image](https://github.com/user-attachments/assets/bd4893c2-9df5-4b3c-81b4-f12140db5e90)
+
 
 
 Endpoint Consultar por usuario por ID 

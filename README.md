@@ -29,6 +29,11 @@ Si se intenta crear un nuevo usuario con el mismo correo se realiza validación 
 
 ![image](https://github.com/user-attachments/assets/83ac361f-391a-4a78-beb1-03dc7d2c3517)
 
+Endpoint Consultar Usuarios:
+Retorna todos los usuarios creados con paginación.
+http://localhost:8080/api/v1/users
+
+
 
 
 

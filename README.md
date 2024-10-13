@@ -51,11 +51,12 @@ http://localhost:8080/api/v1/users
 
 Endpoint Consultar por usuario por ID 
 El ID está en formato UUID.
-http://localhost:8080/api/v1/users/111f1bcd-2efd-45ec-826e-cfcd3beaebf2
+http://localhost:8080/api/v1/users/7948bf1d-ec34-4c96-9ad2-2b41935edddf
 Respuesta del servicio:
 
 
-![image](https://github.com/user-attachments/assets/0f285bfa-c2aa-41c2-b47b-1e8815fb1966)
+![image](https://github.com/user-attachments/assets/c1f33ea4-4407-4981-966a-3fc8ab9d529a)
+
 
 Endpoint Actualizar Usuario.
 http://localhost:8080/api/v1/users/c10b9c77-6490-44af-9d75-c0baf9cbc9ec

@@ -20,6 +20,10 @@ http://localhost:8080/api/v1/auth/register
 
 ![image](https://github.com/user-attachments/assets/2fb307a4-2be4-4c1a-8d81-a23ae04d957c)
 
+Respuesta:
+![image](https://github.com/user-attachments/assets/0fcc52e2-1fcf-424c-9cc4-0019e39ef080)
+
+
 
 
 

@@ -32,7 +32,8 @@ http://localhost:8080/api/v1/auth/register
 
 Respuesta:
 
-![image](https://github.com/user-attachments/assets/0fcc52e2-1fcf-424c-9cc4-0019e39ef080)
+![image](https://github.com/user-attachments/assets/b1b22444-e78b-47d8-b2bc-ea34aecbb220)
+
 
 
 Si se intenta crear un nuevo usuario con el mismo correo se realiza validación de acuerdo con la solicitud, la cual indica que existe un usuario con el mismo correo, ver respuesta.

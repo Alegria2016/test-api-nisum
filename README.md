@@ -38,7 +38,8 @@ Respuesta:
 
 Si se intenta crear un nuevo usuario con el mismo correo se realiza validación de acuerdo con la solicitud, la cual indica que existe un usuario con el mismo correo, ver respuesta.
 
-![image](https://github.com/user-attachments/assets/83ac361f-391a-4a78-beb1-03dc7d2c3517)
+![image](https://github.com/user-attachments/assets/9ebf36a1-2e38-49f7-ac70-25db9a69c4bc)
+
 
 Endpoint Consultar Usuarios:
 Retorna todos los usuarios creados con paginación.

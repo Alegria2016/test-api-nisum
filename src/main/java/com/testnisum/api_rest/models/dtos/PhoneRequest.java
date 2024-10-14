@@ -12,10 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PhoneRequest {
     private Long id;
-
     private String number;
-
     private String cityCode;
-       private String countryCode;
-    private User user;
+    private String countryCode;
+    private UserRequest user;
 }

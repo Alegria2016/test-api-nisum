@@ -24,7 +24,7 @@ public class UserRequest {
     @NotEmpty(message = "El cooreo debe cumplir con el formato ")
     private String email;
     private String password;
-    private List<Phone> phones;
+    private List<PhoneRequest> phones;
     private String token;
     private Role role;
     private boolean isactive;

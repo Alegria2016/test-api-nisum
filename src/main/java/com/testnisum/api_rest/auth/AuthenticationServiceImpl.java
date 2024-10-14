@@ -55,7 +55,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     public RegisterResponse register(UserRequest request){
         RegisterResponse response = new RegisterResponse();
 
-        User userFound = userRepository.findByEmailAddress(request.getEmail());
+        User userFound = userRepository.findByEmail(request.getEmail()).orElse(null);
 
         if(userFound  !=null){
             response.setMessage(ErrorCatalog.EXISTS_USER.getMessage());

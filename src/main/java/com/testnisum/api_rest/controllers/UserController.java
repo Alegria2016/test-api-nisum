@@ -36,12 +36,14 @@ public class UserController {
     @PutMapping("/{id}")
     public ResponseEntity<UserResponse> update(
             @PathVariable UUID id,
+            @RequestHeader("Authorization") String token,
             @Valid @RequestBody UserRequest request ){
         return new ResponseEntity<>(userService.update(id,request), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<UserResponse> deleteById(@PathVariable UUID id){
+    public ResponseEntity<UserResponse> deleteById(@PathVariable UUID id,
+                                                   @RequestHeader("Authorization") String token){
         return new ResponseEntity<>(userService.deleteById(id), HttpStatus.OK);
     }
 }

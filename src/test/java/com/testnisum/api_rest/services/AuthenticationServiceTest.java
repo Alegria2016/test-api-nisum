@@ -26,8 +26,6 @@ public class AuthenticationServiceTest {
 
 
     AuthenticationServiceImpl authenticationService = Mockito.mock(AuthenticationServiceImpl.class);
-
-    private User user;
     private UUID uuid;
 
     @BeforeEach
@@ -106,16 +104,6 @@ public class AuthenticationServiceTest {
         return phones;
     }
 
-
-    User userCreate(){
-        return  User.builder()
-                .id (uuidGenerator())
-                .name("PEDRO")
-                .password("Test123=")
-                .lastLogin(LocalDateTime.now())
-                .build();
-
-    }
 
 
     UserResponse mockUserResponse() {

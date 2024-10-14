@@ -5,32 +5,23 @@ import com.testnisum.api_rest.models.dtos.PhoneResponse;
 
 import com.testnisum.api_rest.models.dtos.UserRequest;
 import com.testnisum.api_rest.models.dtos.UserResponse;
-import com.testnisum.api_rest.models.entities.User;
+
 
 import com.testnisum.api_rest.services.impl.UserServiceImpl;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 class UserServiceTest {
 
-    @Autowired
-    Pageable pageable;
-
-    Page<UserResponse> userResponsePage;
-
     UserServiceImpl userRepository = Mockito.mock(UserServiceImpl.class);
-
     private UUID uuid;
 
 
@@ -41,6 +32,7 @@ class UserServiceTest {
 
     }
 
+    @DisplayName("Test para buscar usuario por UUID.")
     @Test
     void findUserById() {
 
@@ -56,12 +48,7 @@ class UserServiceTest {
     }
 
 
-    @Test
-    void findAllTest() {
-
-        Mockito.when(userRepository.findAll(pageable)).thenReturn(userResponsePage);
-    }
-
+    @DisplayName("Test para actualizar usuario.")
     @Test
     void updateTest() {
 
@@ -71,6 +58,7 @@ class UserServiceTest {
         System.out.println(response.getName());
     }
 
+    @DisplayName("Test para eliminar usuario.")
     @Test
     void deleteByIdTest() {
         UUID uuid = uuidGenerator();
@@ -83,10 +71,7 @@ class UserServiceTest {
 
 
     UUID uuidGenerator(){
-        UUID uuid = UUID.randomUUID();
-        String uuidAsString = uuid.toString();
-        return uuid;
-
+        return  UUID.randomUUID();
     }
 
     List<PhoneResponse> phoneResponses(){
@@ -128,15 +113,7 @@ class UserServiceTest {
     }
 
 
-    User userCreate(){
-        return  User.builder()
-                .id (uuidGenerator())
-                .name("PEDRO")
-                .password("Test123=")
-                .lastLogin(LocalDateTime.now())
-                .build();
 
-    }
 
 
     UserResponse mockUserResponse() {

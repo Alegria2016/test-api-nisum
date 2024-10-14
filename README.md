@@ -1,6 +1,6 @@
 # API REST CREACIÓN DE USUARIO.
 
-Se desarrolló la Api bajo arquitectura SOA Orientada a Servicios, mediante tres capas Cliente Rest, Servicio, Datos. La api cuenta con Spring Security e implantación de JWT, también se hace uso de varios patrones de diseños como Builder entre otros. También de hace uso de códigos de respuestas Http adecuados a cada solicitud, para ello se creó la clase ErrorCatalog en la cual se definen los mensajes para cada tipo de error de la Api.
+Se desarrolló la Api bajo arquitectura SOA Orientada a Servicios, mediante tres capas Cliente Rest, Servicio, Datos. La api cuenta con Spring Security e implantación de JWT, también se hace uso de varios patrones de diseños como Builder entre otros. Se hace uso de códigos de respuestas Http adecuados a cada solicitud, para ello se creó la clase ErrorCatalog en la cual se definen los mensajes para cada tipo de error de la Api.
 
 ![image](https://github.com/user-attachments/assets/c77ce4d2-0c70-441b-a8d4-5ce333fce30c)
 
@@ -10,6 +10,15 @@ Para la tabla Usuarios se define id en formato UUID de acuerdo con solicitud.
 
 ![image](https://github.com/user-attachments/assets/539adc24-2757-401b-bc15-9025f8afa3fc)
 
+Para Iniciar el proyecto.
+1) Clone repositorio.
+2) De preferencia usar Intellij IDEA
+3) Limpiar proyecto e Iniciar.
+
+Una vez inicia el proyecto ir na navegador para ver la documentacion. 
+http://localhost:8080/swagger-ui/index.html
+Especificar el puerto en el cual haya iniciado el proyecto en me caso es http://localhost:8080 seguido de la ruta de la documentacion como aparece anteriormente.
+
 Endpoints 
 
 Endpoint de creación del Usuario:
@@ -18,38 +27,45 @@ El correo debe cumplir este formato: juan@gmail.com al igual que la contraseña 
 Las dos expresiones se encuentran en la en el paquete utils en la clase Constant se hace uso de ellas mediante un servicio que permite hacer las validaciones correspondientes desde cualquier otra clase mediante el uso de Composición, sólo inyectando el servicio.
 http://localhost:8080/api/v1/auth/register
 
-![image](https://github.com/user-attachments/assets/2fb307a4-2be4-4c1a-8d81-a23ae04d957c)
+![image](https://github.com/user-attachments/assets/e4a099ee-e9cd-4239-be10-540438b373ac)
+
+
 
 Respuesta:
 
-![image](https://github.com/user-attachments/assets/0fcc52e2-1fcf-424c-9cc4-0019e39ef080)
+![image](https://github.com/user-attachments/assets/b1b22444-e78b-47d8-b2bc-ea34aecbb220)
+
 
 
 Si se intenta crear un nuevo usuario con el mismo correo se realiza validación de acuerdo con la solicitud, la cual indica que existe un usuario con el mismo correo, ver respuesta.
 
-![image](https://github.com/user-attachments/assets/83ac361f-391a-4a78-beb1-03dc7d2c3517)
+![image](https://github.com/user-attachments/assets/9ebf36a1-2e38-49f7-ac70-25db9a69c4bc)
+
 
 Endpoint Consultar Usuarios:
 Retorna todos los usuarios creados con paginación.
 http://localhost:8080/api/v1/users
 
-![image](https://github.com/user-attachments/assets/c5a8c543-748b-4f32-b55f-aacc5e1c7d61)
+![image](https://github.com/user-attachments/assets/bd4893c2-9df5-4b3c-81b4-f12140db5e90)
+
 
 
 Endpoint Consultar por usuario por ID 
 El ID está en formato UUID.
-http://localhost:8080/api/v1/users/111f1bcd-2efd-45ec-826e-cfcd3beaebf2
+http://localhost:8080/api/v1/users/7948bf1d-ec34-4c96-9ad2-2b41935edddf
 Respuesta del servicio:
 
 
-![image](https://github.com/user-attachments/assets/0f285bfa-c2aa-41c2-b47b-1e8815fb1966)
+![image](https://github.com/user-attachments/assets/c1f33ea4-4407-4981-966a-3fc8ab9d529a)
+
 
 Endpoint Actualizar Usuario.
 http://localhost:8080/api/v1/users/c10b9c77-6490-44af-9d75-c0baf9cbc9ec
 
 Body:
 
-![image](https://github.com/user-attachments/assets/1b02561a-2db4-4c32-b878-7936a3a2739d)
+![image](https://github.com/user-attachments/assets/c1b069b6-2dd7-477b-9c0e-0853c6d76abd)
+
 
 Respuesta:
 {
